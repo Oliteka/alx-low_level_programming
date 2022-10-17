@@ -6,10 +6,14 @@
 
 int main(void)
 {
-	char i;
+	char alpha = 'z';
 
-	for (i = 'z'; i >= 'a'; i--)
-	putchar('i');
+	while (alpha >= 'a')
+	{
+		putchar(alpha);
+		alpha--;
+	}
+
 	putchar('\n');
 
 	return (0);

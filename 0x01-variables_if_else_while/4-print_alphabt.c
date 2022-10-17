@@ -6,12 +6,16 @@
 
 int main(void)
 {
-	char i;
+	char alpha = 'a';
 
-	for (i = 'a'; i <= 'z'; i++)
-	if (i == 'e' || i == 'q')
-	continue;
-	putchar(i);
+	while (alpha <= 'z')
+	{
+		if ((alpha != 'q') && (alpha != 'e'))
+		{
+			putchar(alpha);
+		}
+	}
+
 	putchar('\n');
 
 	return (0);
